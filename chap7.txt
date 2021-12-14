@@ -1,0 +1,101 @@
+virtualisation:
+	technique that enables single physical infrastructure to servce as multiple logical infrastructure
+	!= cc
+
+benefits:
+	better resource utilisation
+	increase roi
+	dynamic data center
+	supports green it
+	eases adminstration
+	improves disaster recovery
+
+drawbacks:
+	single point of failure
+	demands high end and powerful infra
+	may lead to lower performance
+	reqd specialised skills
+
+resources virtualised:
+	1.)processor: abstracted from physical
+	2.)memory: maps virtual page to physical page
+	3.)storage: abstracted from physical, technique: san(storage area network), nas(network attached storage)
+	4.)network: abstracted, router, switch, nic, achieved from internet or combining many external nw. network acesses: bridged nw, network address translation and host only
+	5.) data: aggregate data from dif resource
+	6.) app: use app without installing, enabling tech for saas
+
+3 types of virtualisation see table at pg 198
+
+hypervisors:
+	sw tool that sits in between VM and physical infra and provide reqd virtual infra to vm
+	also called vmm(virtual machine monitor)
+	ex: VMware, Xen
+	allow 1 to many relation bw hw and OS
+
+types:
+	type1: bare mental hv
+	type2: hosted hv
+
+bare mental hv:
+	no host os
+	run and access physical resource
+	efficient as no overhead
+	handle heavy load and are more secure
+	ex: ms hyper V
+
+hosted hv/embedded hv:
+	requires host OS
+	installed on host OS as sw
+	host os= physical host
+	low efficient
+	is host OS crash then sys fails
+	ex: VMware workstation
+
+hosted hv more vulnerable to attacks
+
+type of attacks:
+	thru host os
+	thru guest os
+
+thru host os: 
+	attack host os -> gain control -> can attack hypervisor -> can run priviledge instr and control hw
+	attacker can do:
+		denial of service attack
+		steal confidential info
+
+thru guest os:
+	attack guest os-> compromise hypervisor ->  misuse hypervisor priviledge
+	can be done on both type1 and type2
+	attacker can do:
+		get unauth access to other vm
+		resource exhaustion
+
+avoid attacks by:
+	update hv sw and host os regularly
+	disconnect unused resource
+	enable least priviledge to hypervisor and guest OS
+	deploy monitoring tools
+	strong guest isolation
+
+diff bw virtualisation and cc:
+	vr: more iaas than paas and saas
+	vr: not made on demand self service
+	vr: fails to provide elasticity
+	vr: target audience is IT owners not end users
+
+iaas:
+	vr concept fully used
+	type1 hv selected
+
+paas:
+	uses OS, db, programming lang virtualisation
+	various client tools like WEBCLI, RST API for accessing vr platform available to devs
+
+saas:
+	subs based rather than license based
+	app lvl vr
+
+in all 3 loadbalancers mantain the scalabilty. agr zyada virtualisation ho jaye to woh dusre server se virtualise kr dete hai
+
+  
+
