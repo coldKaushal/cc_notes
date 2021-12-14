@@ -1,0 +1,106 @@
+capital expenditure: whole 
+operation expenditure: for reqd service and time
+
+NIST: national institute of standard and technology
+
+
+cloud computing nist def:
+	cc is a model for enabling, ubiqutous, convenient, on demand network access to a shared pool of configurable resources that can be rapidly provisioned and released with minimal management effort or service provider mech
+
+need for cloud computing:
+	economical
+	convenient
+	reliable
+	secure
+
+
+local computing: store/execution at ur machine
+cloud computing: '' '' over internet
+
+
+cc model : 5charactersitics, 3 service, 4 deployment
+
+5 characteristics:
+	on demand self service: unilaterally provision
+	broad network access: thick/thin device
+	elastic resource pooling: multitenant
+	rapid elasticity: scale out/in
+	measured service: monitoring
+
+4 deployment model:
+	depends on organisation's structure and provisioning location
+
+	1.)private cloud: 1 organisation, on/off premises, owned by third party/org/combination of both
+	2.)public cloud: for general public, on premise, owned by business/academic/govt
+	3.)community cloud: cloud infra shared by several org, on/off premises, owned by org/third party, supports specific community, ex: mission/security mech
+	4.) hybrid cloud: comb of 2 or more, ex: cloud bursting for load balancing between clouds
+
+3 service model: 
+	saas: crm, business intelligence analysis
+	paas: google app engine, microsoft azure
+	iaas: aws
+
+note: org that have a sw package for a specific purpose and want to run on the cloud opt iaas over paas
+
+cloud ecosystem: system of interdependent components
+	actors: consumer/provider categorised into
+		1.) CSU: cloud service users, ex: individual, enterprise, admins etc
+		2.) CSP: cloud service provider, ex: provider of saas, iaas, paas
+		3.) CSN: cloud service partner, ex: app dev, content provider, equipment provider
+
+		diagram:
+		 CSN1   CSN2   CSN3
+		 CSP1   CSP2   CSP3
+		 CSU1   CSU2   CSU3
+		 connect upper to lower layer by arrow and CSP among them too
+	example: tally
+
+requirements of cc service:
+	multitenancy
+	service life cycle management
+	security
+	responsiveness
+	regulatory aspects
+	reliable,available and quality assurance
+	massive data processing
+	(bhot saare hai lekin yeh enough honge, inki kahaniya likh dena acc to marks)
+
+
+reqm for iaas:
+	hw reqm
+	sw reqm
+	storage regm
+	netwrok reqm
+	availability reqm(protection/backup)
+
+reqm for paas:
+	same as above
+	deployment options for user(scale out options)
+
+reqm for saas:
+	app specific reqm
+	network reqm
+
+
+cloud application:
+	app runs on cloud
+	feature of desktop and web app
+	fast response
+	can work offline(unlike web)
+	ex: gmail/dropbox
+
+benfits of cc:
+	accessibilty
+	scalability
+	reliable
+	cost efficient
+	dependabilty
+	green IT
+
+drawbacks:
+	network dependent
+	security
+	no control on resources
+	interoperabebility: 2 diff vendors do not cooperate with each other
+
+
