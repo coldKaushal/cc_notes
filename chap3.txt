@@ -1,0 +1,151 @@
+cloud architecure:
+	hierarchical set of components
+	4 layers
+	L1: user/client layer
+		lowest layer, thin thick client
+	L2: network layer
+		internet->public, LAN->private
+		user require min bandwidth
+		not under preview of SLA
+	L3: cloud management layer
+		sw used in management: cloud OS and management sw
+		sw do:
+			resource management
+			optimisation
+			internal cloud governance
+		under SLA
+	L4: hw resource layer
+		most imp layer that comes under SLA
+		data center-> fast/reliable/available
+
+SLA: service level agreement, these should be met otherwise penalty to provider, usually sys should be available, reliable and should respond within the defined duration
+
+anatomy of cloud/structure of cloud:
+	not same as architecture
+	can be considered as part of architecture
+	5 components:
+		1.) application
+		2.) platform
+		3.) virtualised infrastructure
+		4.) virtualisation
+		5.) physical hw: data server/center/storage
+
+nw performance is the key issue to the cc performance
+
+various options for cloud deployment from nw pov:
+1.) public cloud access networking
+	connectivity-> internet/vpn
+	public =>unsecure
+	security using encrypted tunnels = overhead = performance issue
+	to decrease delay => routing methods
+
+2.) private cloud access networking
+	internet vpn or vpn from nw operator
+	tech/approach => local/in house
+	If the application access was properly done with an organizational network—connectivity in a precloud configuration—transition to private cloud computing will not affect the access performance.
+	(iss line ka matlab samjh nhi aya mere)
+
+3.) intra cloud networking for public cloud service
+	resources of provider => duniya mein faile hue pr net se connected
+	public cc nw are internal to provider => not visible to user
+	QoS is imp
+	SLA addresses performance issues
+
+4.) private intra cloud networkin
+	most complicated issue
+	link users with resource to which their application was assigned
+	supported over connectivity of major data center sites owned by company
+	extent of this depends on app(whether componentised based on SOA)
+	this affects the cc performance
+
+conventionally private nw => on premise(highly secure and fast), now saas therefore off premise so we need system that is both fast and secure enough.
+
+internet traffic -> poor performance because limited gateway => need widely supported internet gateway and plan the correct connectivity of provider and consumer(video call hogs more bw but email doenst)
+
+	
+stand alone application: run on single mc, not connected to internet 
+
+web application: 
+	client-server architecure
+	nw dependent
+	kya nhi hai: 
+		elastic
+		multitenant
+		metered connection
+		single platform
+		pay as u go basis
+		peak load cannot be handled
+
+unique features of cc:
+	write charactersitics + benefits
+
+
+managing the cloud:
+	efficiently manage kro
+	2 parts:
+		infra management
+		app management
+
+infra management:
+	infra backbone, responsible for QoS
+	core-> resource mngmnt
+		resource scheduling, provisiong, load balancing
+	managed by cloud OS
+	efficiency -> performance, functionality and cost
+	(teeno ko explain kr dena ki kyu imp hai)
+	mngmnt methods based on load fluctuation: ki LF ke time pr efficient hona chaiye
+		2LF: predictable, unpredictable
+
+app mngmnt:
+	pehle likhna ki why companies are shifting app to cc: improve agility and meet dynamic reqm
+	firr ki yeh krne ke liye kya kya provide krna padega + need to monitor the service and provide email/msging(saas capability)
+	these should be efficient
+	should satisfy sla
+	enfornce enterprise policies like governance and auditing
+
+SLAs are the set of rules that are defined between the user and cloud service provider that decide upon the QoS factor. If SLAs are not followed, then the defaulter has to pay the penalty.
+
+
+cloud migration:
+	traditional to cloud model
+	phases:
+		1.) evaluation: sab kuch current infra, cloud infra, sla, finance, risk bhang bhosda sab kuch
+		2.) migration strategy: evaluation ke baad dekho kaunsi strategy sahi hai
+			hotplug: pura uthao aur migrate kro
+			fusion: partial migration, kuch part pehle wala hi rehta hai kuch cloud mein aata hai. mushkil hai yeh
+		3) prototyping: chote se part ko shift krk test kro
+		4) provisiong:
+			pre migration optimisation
+			servers are provisioned
+			platform and app deployed
+			data replicated
+			integration points configured
+			mngmnt sw setup
+		5) testing:
+			conduct test to check:
+				performance
+				load testing
+				failure
+				recovery
+				scale out
+approaches:
+	1.) migrate existing tech:
+		rebuild/rearchitect some or all part
+		use virtualisation tech
+		mushkil hai
+		time lagta hai
+
+	2.) start from scratch
+		purane jaise ka ek naya bnalo aur customer ko do choice dekr confuse kro
+
+	3.) separate company:
+		new company banalo
+		separate brand name, mngmnt, RnD, sales etc
+		investment and Internet Protocol -> parent company
+		behave like cloud based startup
+
+	4.) buy an existing vendor
+		2 fayde:
+			competitor gya
+			cloud model bhi mil gya
+		 The risk of course is that the innovation, drive, and operational approach of the cloud-based company are destroyed as it is merged into the larger acquirer.
