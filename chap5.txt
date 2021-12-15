@@ -1,0 +1,187 @@
+
+Iaas
+	physical resources are virtualised and given to vm
+	end users: IT architects
+	4 things provided:
+		compute
+		storage
+		network
+		load balancers
+
+	charactersitsics:
+		web access to resources
+		centralised management
+		elastic and dynamic scaling
+		shared infra: same physical but diff VM
+		preconfigured VM
+		Metered service
+
+	suitability:
+		unpredictable spikes in usage
+		limited capital investment
+		infra on demand
+	used by startups mainly
+
+	non suitability:
+		off premise not allowed
+		usage is minimal
+		better performance reqd
+		need control
+
+	pros:
+		pay as u go
+		reduced TCO
+		increased ROI
+		elastic resource
+		better resource util
+		green it
+
+	cons:
+		security issue
+		interoperabibility: 2 diff iaas have diff standard, therefore tough to migrate
+		performance issue
+
+	ex: aws, ms azure
+
+paas:
+	diff developing tools like pl, os, db, framework given
+	end user: devs
+	4 things provided:
+		pl
+		framework: node.js, rails, django
+		db
+		other tools: test n deploy tools
+
+	characteristics:
+		all in one: dev+ test + host + maintain
+		web access to dev platform
+		offline access
+		scalable
+		colab
+		diversive client tools: make dev easy ex: CLI, webCLI, Rest API
+
+	used mainly by saas providers(startup) and independent software vendors
+	
+	suitability:
+		colab
+		automated testing and deploy
+		time to market: iterative and incremental model->app in market as per time frame
+
+	non suitability:
+		freq app migration: vendor lock in(like interoperabibility)
+		customisation at infra level
+		plexibility at platfrom level
+		integration with on premise app
+
+	pros:
+		quick dev and deploy
+		reduced TCO
+		increased ROI
+		supports agile sw dev: new gen app are built on agile model
+		colab
+		eas of use
+		scalable
+
+	cons:
+		vendor lock in
+		security issues
+		less flexibility
+		nw dependent
+
+	ex: google app engine and heroku
+
+SaaS:
+	end users: customers
+
+	4 service provided:
+		business service: ERP, CRM, biling
+		social network: these provider adopted cc model
+		doc management
+		mail service
+	(more like who is using this)
+
+	characteristic:
+		one to many
+		web access
+		centralised mngmnt: customer dont need to update
+		multidevice support
+		scalable
+		available
+		api integration
+
+	used by startups
+	suitability:
+		on demand sw
+		sw for startups
+		sw compatible with multi-device
+		sw with varying loads
+
+	non suitability:
+		confidential data
+		better on premise
+		nw speed is low
+
+	pros:
+		no client side nstallation
+		cost saving
+		less mantenance
+		ease of access
+		scaling
+		disaster recovery
+		one to many
+
+	cons:
+		security
+		connectivity
+		loss of control
+
+	ex: salesforce, google apps
+
+other models:
+	NaaS:
+		network as a service
+		allow deploy of custom routing protocols
+		pop service:
+			vpn
+			bandwidth on demand
+			mobile nw virtualisation
+
+	DEaas:
+		desktop as a service
+		desktop virtualisation
+		jaise ek desktop aap apne system se use kr sakte ho aisa kuch
+		end user: manage desktop images, app, security
+
+	STaas:
+		Storage as a service
+		end user: store and access files at any time
+		commonly used as backup and for disaster recovery
+
+	DBaas:
+		db as a service
+		access db server without installing and maintaning
+		end user: access and pay acc to usage
+		ex: dynamoDb, mongoDB
+
+	Daas:
+		data as a service
+		end user: access data provided by provider over internet
+		baakio ke saath integrated rehti hai
+		used in geography data service and finance data
+
+	SECaas:
+		security as a service
+		provider integrate their security services to benefit end users
+		includes auth, anti-virus, anti malware, intrusion etc
+		ex: CISCO, McAfee
+
+	IDaas:
+		Identification as a service
+		end user: access authentication infra
+		authentication mein jo kuch use hota hai woh sab provide krte hai
+
+
+	Xaas:
+		everything as a service
+		write saari service as a service 
+		
