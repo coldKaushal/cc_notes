@@ -1,0 +1,177 @@
+deploment model:
+	depends on user
+	4 types: public, private, community, hybrid
+	parameters: size of cc, type of provider and user, location, security etc
+
+
+private cloud:
+	( pehle jo pata hai iske baare mein likh dena )
+	single org but multiple consumers
+	ex: openstack, eucalyptus
+	small in size compared to other
+
+	charactersitics:
+		secure
+		central control
+		weak SLA: since owned by company so some SLA may not be valid or they r weak
+
+	suitability:
+		need separate cloud
+		have sufficient funds
+		data security is issue
+		want complete control
+		have less users
+		(basically iski advantage ki application)
+
+	not suitable:
+		high user base
+		low finance
+		dont have prebuilt infra
+		dont have manpower to maintain
+		(drawbacks + suitability ka ulta soch lo)
+
+	adv:
+		small in size + easy to maintain
+		security and privacy
+		controlled by org
+
+	disadv:
+		budget constraint
+		loose SLA
+
+	2 types:
+		on premise
+		outsourced
+
+		issues:
+			SLA
+			network
+			location
+			mantenance
+			security
+			performance
+			management
+
+			(dono mein kuch likh dena like on wala zyada secure, on site, managed by company, weak sla wagerah aur off mein ulta iska + sla in on = employee and company, sla in off: company and third party)
+
+
+public cloud:
+	(jo aata hai woh likh dena)
+	resource seems infinite
+	ex: ms azure, aws
+
+	characteristics:
+		highly scalable
+		affordable
+		less secure
+		high available
+		strict sla
+
+	suitability:
+		requirement is large
+		reqm is varying
+		no physical infra available
+		finance constraints
+
+	not suitable:
+		when need security
+		when need autonomy
+		third party reliability not preferred
+
+	adv:
+		infra not established
+		no need to maintain
+		less costly than others
+		strict sla's
+		no limit to user
+		scalable
+
+	disadv:
+		security
+		autonomy not possible
+
+	issues:
+		sla: strict and bw user and provider
+		network: user is responsible unlike in private, => easy to mantain by provider
+		performance: challenging if user base increases
+		multitenancy
+		security
+		location: user in 1 country and data in another(not good)
+		mngmnt: difficult
+		mantenance: overall tough
+
+
+community cloud:
+	( pehle wahi same jo tumhe aata hai)
+	kindof multiple private network
+	for those who can't afford private alone and dont trust public
+
+	characteristics:
+		collaborative and distributed maintenance
+		partial secure: safe from the outside but not inside
+		cost effective
+
+	suitability:
+		need private but low money
+		dont want to maintain completely
+		wanna colab with others
+		more security than public
+
+	not suitable:
+		prefer anatomy
+		doesnt want to colab
+
+	adv:
+		low cost private cloud
+		colab possible
+		shared responsibilty
+		better security than public
+
+	disadv:
+		no autonomy
+		less secure than private
+		no colab = not suitable
+
+	2 types:
+		on premise and outsourced
+		(same like private bs thoda add kr dena multiple org wala part)
+
+
+hybrid cloud
+	comb of them
+	remain unique but bound by proprietary right
+	initially private then additional resource of public cloud
+	ex: eucalyptus
+
+	characteristics:
+		scalable
+		partial secure (because of public)
+		strict sla (less than public more than private)
+		complex cloud management
+
+	suitability:
+		need private with scalable
+		more security than public
+
+	not suitable:
+		want more security
+		when not able to handle management
+
+	adv:
+		power of both private and public
+		scalable
+		better security than public
+
+	disav:
+		complex management
+		strict sla
+
+	issues:
+		sla: depends on service provider(private cloud), private->weak, public-> strict
+		network: mainly private use public when needed => org has to put effort in management
+		performance: feel of infinite resource
+		multitenancy: because public therefore can be misused
+		location: issues of private and public
+		security and privacy: 
+		cloud mngmnt: by private
+		maintenance: complex
